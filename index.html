@@ -5,7 +5,7 @@
     <title>M-Comet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Do+Hyeon|Nanum+Gothic|Nanum+Pen+Script|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/common.css" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
@@ -61,7 +61,7 @@
             <div id="row1" class="row">
                 <div class="col-md left-col">
                     <div class="img">
-                        <img id="img1" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="./images/11.jpg" />
+                        <img id="img1" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="https://i.imgur.com/3b85WvV.jpg" />
                     </div>
                 </div>
                 <div class="col-md right-col">
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-md right-col">
                     <div class="img">
-                        <img id="img2" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="./images/2.jpeg" />
+                        <img id="img2" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="https://i.imgur.com/54uE7Ki.jpg" />
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             <div id="row3" class="row">
                 <div class="col-md left-col">
                     <div class="img">
-                        <img id="img3" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="./images/12.jpg" />
+                        <img id="img3" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="https://i.imgur.com/4Tf93VV.jpg" />
                     </div>
                 </div>
                 <div class="col-md right-col">
@@ -139,10 +139,10 @@
     </footer>
     <!-- Footer (end) -->
 
-<script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="./js/popper.min.js"></script>
-<script type="text/javascript" src="./js/bootstrap.js"></script>
-<script type="text/javascript" src="./js/skrollr.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/skrollr.min.js"></script>
 <script type="text/javascript">
 $(document).ready(() => {
     let s = skrollr.init();
@@ -164,10 +164,13 @@ $(document).ready(() => {
     $('#copyright').text('Copyright\u00A9 '+new Date().getFullYear()+' M-Comet');
     
 });
-$(window).load(() => {
-    // Remove Spinner
+
+$(window).on('load', function() {
+    // Loader remove
     $('#loader').remove();
+    $('body').css("opacity", "1");
 });
+
 $(window).resize(function(){
     // 작은 화면에서 그림과 인용구 위치 조정
     if($(window).width() <= 754) {
