@@ -1,0 +1,269 @@
+.jumbotron {
+    position: static;
+}
+.btn-top {
+    position: fixed;
+    right: 30px;
+    bottom: 10%;
+    z-index: 4;
+}
+.quote {
+    z-index: 3;
+}
+.img {
+    z-index: 2;
+}
+.quote {
+    position: relative;
+    font-size: 16px;
+    margin: 0px 40px 0px 40px;
+    padding-top: 10px;
+}
+body {
+    background-color: #777;
+}
+#row1, #row2, #row3 {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+    .quote {
+        padding-top: 0px;
+        position: relative;
+        top: 100px;
+        font-size: 20px;
+        margin: auto;
+    }
+    #row1 .quote, #row3 .quote {
+        top: 0px;
+        animation: move 2s;
+    }
+    #row2 .quote {
+        top: 50px;
+        animation: l-move 2s;
+    }
+    @keyframes move {
+        0% {
+            top: -50px;
+        }
+        100% {
+            top: 0px;
+        }
+    }
+    @keyframes l-move {
+        0% {
+            top: 0px;
+        }
+        100% {
+            top: 50px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .quote {
+        padding-top: 0px;
+        position: relative;
+        font-size: 20px;
+        margin: auto;
+    }
+    #row1 .quote, #row3 .quote {
+        top: 100px;
+        animation: move 2s;
+    }
+    #row2 .quote {
+        top: 120px;
+        animation: l-move 2s;
+    }
+    @keyframes move {
+        0% {
+            top: 0px;
+        }
+        100% {
+            top: 100px;
+        }
+    }
+    @keyframes l-move {
+        0% {
+            top: 50px;
+        }
+        100% {
+            top: 120px;
+        }
+    }
+}
+
+/* Parallex */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+}
+.bgimg-1 {
+    background-image: url("./images/17.jpg");
+    min-height: 100vh;
+    opacity: 1;
+}
+.bgimg-2 {
+    background-image: url("./images/9.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("./images/14.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("./images/15.jpg");
+    min-height: 100vh;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+/* Parallex (end) */
+
+/* Custom button */
+.button{
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #6C7686;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.29);
+    letter-spacing: 6px;
+    display: inline-block;
+    background: #C0C0C0;
+    font-family: "open sans";
+    font-weight: 600;
+    line-height: 84px;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+    width: 250px;
+    height: 84px;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(-179deg, #F4F4F4 0%, #C0C0C0 100%);
+    box-shadow: 0 5px 6px -4px rgba(0,0,0,0.22), 0 10px 13px -4px rgba(0,0,0,0.34), inset 0 30px 30px 0 rgba(255,255,255,0.35), inset 0 -30px 30px 0 rgba(0,0,0,0.10);
+    border-radius: 140px;
+  
+  }
+.button:hover{
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.22), 0 10px 13px 0px rgba(0,0,0,0.34), inset 0 18px 18px 0 rgba(255,255,255,0.35), inset 0 -18px 18px 0 rgba(0,0,0,0.10);
+    transform: translate(0px, -4px);
+    backface-visibility: hidden;
+    color: #7A8393;
+}
+.button:active{
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.22), 0 10px 13px 0px rgba(0,0,0,0.34), inset 0 3px 3px 0 rgba(255,255,255,0.35), inset 0 -3px 3px 0 rgba(0,0,0,0.10);
+    backface-visibility: hidden;
+}
+
+.circle{
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #6C7686;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.29);
+    display: inline-block;
+    background: #fff;
+    font-family: "open sans";
+    font-weight: 600;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+    width: 45px;
+    height: 45px;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(-179deg, #F4F4F4 0%, #C0C0C0 100%);
+    box-shadow: 0 5px 6px -4px rgba(0,0,0,0.22), 0 10px 13px -4px rgba(0,0,0,0.34), inset 0 100px 100px 0 rgba(255,255,255,0.35), inset 0 -100px 100px 0 rgba(0,0,0,0.10);
+    border-radius: 140px;
+}
+.circle:hover{
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.22), 0 10px 13px 0px rgba(0,0,0,0.34), inset 0 18px 18px 0 rgba(255,255,255,0.35), inset 0 -18px 18px 0 rgba(0,0,0,0.10);
+    transform: translate(0px, -4px);
+    backface-visibility: hidden;
+    color: #7A8393;
+}
+.circle:active{
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.22), 0 10px 13px 0px rgba(0,0,0,0.34), inset 0 3px 3px 0 rgba(255,255,255,0.35), inset 0 -3px 3px 0 rgba(0,0,0,0.10);
+    backface-visibility: hidden;
+}
+/* Custom button (end) */
+
+/* Loader */
+#loader {
+    /* Uncomment this to make it run! */
+    /*
+       animation: loader 5s linear infinite; 
+    */
+    position: absolute;
+    top: 45vh;
+    left: calc(50% - 20px);
+}
+@keyframes loader {
+    0% { left: -100px }
+    100% { left: 110%; }
+}
+#box {
+    width: 50px;
+    height: 50px;
+    background: skyblue;
+    animation: animate .5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+@keyframes animate {
+    17% { border-bottom-right-radius: 3px; }
+    25% { transform: translateY(9px) rotate(22.5deg); }
+    50% {
+        transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+        border-bottom-right-radius: 40px;
+    }
+    75% { transform: translateY(9px) rotate(67.5deg); }
+    100% { transform: translateY(0) rotate(90deg); }
+} 
+#shadow { 
+    width: 50px;
+    height: 5px;
+    background: #000;
+    opacity: 0.1;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow .5s linear infinite;
+}
+@keyframes shadow {
+    50% {
+        transform: scale(1.2,1);
+    }
+}
+/* Loader (end) */
