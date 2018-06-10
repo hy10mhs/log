@@ -145,9 +145,6 @@
 <script type="text/javascript" src="./js/skrollr.js"></script>
 <script type="text/javascript">
 $(document).ready(() => {
-    // Remove Spinner
-    $('#loader').remove();
-
     let s = skrollr.init();
 
     // 작은 화면에서 그림과 인용구 위치 조정
@@ -166,6 +163,10 @@ $(document).ready(() => {
     // Copyright
     $('#copyright').text('Copyright\u00A9 '+new Date().getFullYear()+' M-Comet');
     
+});
+$(window).load(() => {
+    // Remove Spinner
+    $('#loader').remove();
 });
 $(window).resize(function(){
     // 작은 화면에서 그림과 인용구 위치 조정
