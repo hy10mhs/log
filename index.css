@@ -20,7 +20,6 @@
     padding-top: 10px;
 }
 body {
-    opacity: 0;
     background-color: #777;
 }
 #row1, #row2, #row3 {
@@ -226,8 +225,6 @@ body {
     position: absolute;
     top: 45vh;
     left: calc(50% - 20px);
-    z-index: 5;
-    opacity: 1;
 }
 @keyframes loader {
     0% { left: -100px }
