@@ -145,13 +145,14 @@
 <script type="text/javascript" src="./js/skrollr.min.js"></script>
 <script type="text/javascript">
 $(document).ready(() => {
-    let s = skrollr.init();
-
-    // 작은 화면에서 그림과 인용구 위치 조정
     if($(window).width() <= 754) {
+        // 작은 화면에서 그림과 인용구 위치 조정
         $( "#row2" ).append( $( "#row2 .left-col" ) );
+        // 작은 화면에서는 scroll animation제거
+        skrollr.init().destroy();
     } else {
         $( "#row2" ).append( $( "#row2 .right-col" ) );
+        skrollr.init();
     }
 
     // Button for move to top
@@ -172,11 +173,14 @@ $(window).on('load', function() {
 });
 
 $(window).resize(function(){
-    // 작은 화면에서 그림과 인용구 위치 조정
     if($(window).width() <= 754) {
+        // 작은 화면에서 그림과 인용구 위치 조정
         $( "#row2" ).append( $( "#row2 .left-col" ) );
+        // 작은 화면에서는 scroll animation제거
+        skrollr.init().destroy();
     } else {
         $( "#row2" ).append( $( "#row2 .right-col" ) );
+        skrollr.init();
     }
 });
 </script>
