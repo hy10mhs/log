@@ -1,0 +1,13 @@
+body {
+    margin-bottom: 60px;
+    text-align: center;
+}
+li {
+    margin-bottom: 10px;
+}
+ul {
+    list-style: none;
+}
+.card-deck ul li:before {
+    content: '✓  ';
+}
