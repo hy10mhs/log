@@ -8,6 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="webkitRequestFullscreen();	mozRequestFullScreen();	msRequestFullscreen();	webkitRequestFullscreen();	webkitRequestFullscreen();">full screen</button>
+    <div id="full">asdf!!</div>
+    <button onclick="click();">full screen</button>
+<script>
+    function click () {
+        var dom = document.querySelector('#full');
+        dom.webkitRequestFullscreen();
+        dom.webkitRequestFullScreen();
+        dom.mozRequestFullScreen();
+        dom.msRequestFullscreen();
+    }
+
+
+</script>
 </body>
 </html>
