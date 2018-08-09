@@ -11,14 +11,26 @@
     <canvas id="full">dfdfdf</canvas>
     <button onclick="click();">full screen</button>
 <script>
-    function click () {
         var dom = document.querySelector('#full');
-        dom.webkitRequestFullscreen();
-        dom.webkitRequestFullScreen();
-        dom.mozRequestFullScreen();
-        dom.msRequestFullscreen();
-    }
+    var requestFullscreen = function (ele) {
+        if (ele.requestFullscreen) {
+            ele.requestFullscreen();
+        } else if (ele.webkitRequestFullscreen) {
+            ele.webkitRequestFullscreen();
+        } else if (ele.mozRequestFullScreen) {
+            ele.mozRequestFullScreen();
+        } else if (ele.msRequestFullscreen) {
+            ele.msRequestFullscreen();  
+        } else {
+            console.log('Fullscreen API is not supported.');
+        }
+    };
 
+    dom.addEventListener('click', function(e) {
+        e.preventDefault();
+        requestFullscreen(document.documentElement);
+        requestFullscreen(dom);
+    });
 
 </script>
 </body>
