@@ -20,6 +20,7 @@
 }
 body {
     background-color: #777;
+    height: unset !important;
 }
 #row1, #row2, #row3 {
     position: relative;

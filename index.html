@@ -175,28 +175,12 @@ $(document).ready(() => {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, 500);
     });
-
-    // Copyright
-    $('#copyright').text('Copyright\u00A9 '+new Date().getFullYear()+' M-Comet');
-    
 });
 
 $(window).on('load', function() {
     // Loader remove
     $('#loader').remove();
     $('body').css("opacity", "1");
-});
-
-$(window).resize(function(){
-    if($(window).width() <= 754) {
-        // 작은 화면에서 그림과 인용구 위치 조정
-        $( "#row2" ).append( $( "#row2 .left-col" ) );
-        // 작은 화면에서는 scroll animation제거
-        skrollr.init().destroy();
-    } else {
-        $( "#row2" ).append( $( "#row2 .right-col" ) );
-        skrollr.init();
-    }
 });
 </script>
 </body>
