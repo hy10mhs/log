@@ -12,6 +12,7 @@ http://stackoverflow.com/a/34696029/383904
 	position: relative;
 	overflow: hidden;
 	height: 100%; /* Or set a fixed height */
+	margin-top: 75px;
 }
 
 /* SLIDER */
