@@ -133,6 +133,8 @@ body > .btn-top, body > nav, body > main {
 @media screen and (max-width:600px) {
     .bgimg-4 {
         min-height: 400px;
+        background-position-x: center;
+        background-position-y: 100px;
     }
 }
 
