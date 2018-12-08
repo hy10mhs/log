@@ -22,6 +22,11 @@ body {
     background-color: #777;
     height: unset !important;
 }
+
+body > .btn-top, body > nav, body > main {
+    visibility: hidden
+}
+
 #row1, #row2, #row3 {
     position: relative;
     padding-top: 80px;
@@ -123,6 +128,12 @@ body {
 .bgimg-4 {
     background-image: url("https://i.imgur.com/6SdM3FH.jpg");
     min-height: 100vh;
+}
+
+@media screen and (max-width:600px) {
+    .bgimg-4 {
+        min-height: 400px;
+    }
 }
 
 .caption {

@@ -1,3 +1,7 @@
+body { height: unset !important; }
+body > .btn-top, body > nav, body > main {
+	visibility: hidden
+}
 main {
     margin-bottom: 60px;
 }

@@ -132,32 +132,11 @@
 <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./js/skrollr.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(() => {
-        // if($(window).width() <= 754) {
-        //     // 작은 화면에서는 scroll animation제거
-        //     skrollr.init().destroy();
-        // } else {
-        //     skrollr.init();
-        // }
-
-        // Copyright
-        $('#copyright').text('Copyright\u00A9 ' + new Date().getFullYear() + ' M-Comet');
-    });
-
-    $(window).on('load', function () {
-        // Loader remove
-        $('#loader').remove();
-        $('body').css("opacity", "1");
-    });
-
-    $(window).resize(function () {
-        // if($(window).width() <= 754) {
-        //     // 작은 화면에서는 scroll animation제거
-        //     skrollr.init().destroy();
-        // } else {
-        //     skrollr.init();
-        // }
-    });
+$(window).on('load', function() {
+    // Loader remove
+    $('#loader').remove();
+    $('body > .btn-top, body > nav, body > main').css("visibility", "visible");
+});
 </script>
 </body>
 

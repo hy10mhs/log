@@ -1,6 +1,8 @@
 *{box-sizing: border-box; -webkit-box-sizing: border-box; }
-body { margin: 0; background-color: rgb(211, 211, 211); }
-
+body { margin: 0; background-color: rgb(211, 211, 211); height: unset !important; }
+body > .btn-top, body > nav, body > main {
+	visibility: hidden
+}
 /*
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
