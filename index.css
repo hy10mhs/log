@@ -132,9 +132,8 @@ body > .btn-top, body > nav, body > main {
 
 @media screen and (max-width:600px) {
     .bgimg-4 {
-        min-height: 400px;
-        background-position-x: center;
-        background-position-y: 100px;
+        background-size: 1000px 100%;
+        background-position: center;
     }
 }
 
@@ -153,6 +152,13 @@ body > .btn-top, body > nav, body > main {
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
 }
 /* Parallex (end) */
 
