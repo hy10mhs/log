@@ -131,7 +131,6 @@ body > .btn-top, body > nav, body > main {
 
 @media screen and (max-width:600px) {
     .bgimg-4 {
-        background-size: 100%;
         background-position: center;
     }
 }
