@@ -113,7 +113,6 @@ body > .btn-top, body > nav, body > main {
 .bgimg-1 {
     background-image: url("https://i.imgur.com/8fUOkpC.jpg");
     min-height: 100vh;
-    opacity: 1;
 }
 .bgimg-2 {
     background-image: url("https://i.imgur.com/EwWkdkq.jpg");
@@ -132,7 +131,7 @@ body > .btn-top, body > nav, body > main {
 
 @media screen and (max-width:600px) {
     .bgimg-4 {
-        background-size: 1000px 100%;
+        background-size: 100%;
         background-position: center;
     }
 }

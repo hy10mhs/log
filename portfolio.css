@@ -47,6 +47,12 @@ http://stackoverflow.com/a/34696029/383904
 	height: 0;
 }
 
+@media screen and (max-width: 992px) {
+	.CSSgal .prevNext {
+		display: none;
+	}
+}
+
 .CSSgal .prevNext > div+div {
 	visibility: hidden; /* Hide all but first P/N container */
 }
