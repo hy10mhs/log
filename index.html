@@ -46,6 +46,9 @@
     <div id="box"></div>
   </div>
   <!-- Loader (end) -->
+  <!-- overlay -->
+  <div id="overlay"></div>
+  <!-- overlay (end) -->
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -84,6 +87,7 @@
     $(window).on('load', function () {
       // Loader remove
       $('#loader').remove();
+      $('#overlay').remove();
 
       devlog.init(document.getElementById('container'));
     });

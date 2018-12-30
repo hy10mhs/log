@@ -9,6 +9,15 @@ main {
     margin-top: 56px;
 }
 
+#overlay {
+    z-index: 9999;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    top: 0;
+}
+
 /* Loader */
 #loader {
     font-size: 16px;
@@ -19,6 +28,7 @@ main {
     margin-left: -1.5em;
     width: 3em;
     height: 3em;
+    z-index: 10000;
 }
 #box {
     width: 100%;
