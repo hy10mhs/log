@@ -1,187 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <title>M-Comet</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- og -->
-    <meta property="og:title" content="M-Comet" />
-    <meta property="og:description" content="Welcome M-Comet Blog" />
-    <meta property="og:url" content="https://m-comet.ga/" />
-    <meta property="og:image" content="http://m-comet.ga/images/0.jpg" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary">
-    <!-- og (end) -->
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- favicon (end) -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Do+Hyeon|Nanum+Gothic|Nanum+Pen+Script|Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/common.css" />
-    <link rel="stylesheet" type="text/css" href="./index.css" />
+  <meta charset="utf-8" />
+  <title>M-Comet Dev Log</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- og -->
+  <meta property="og:title" content="M-Comet Dev Log" />
+  <meta property="og:description" content="Welcome M-Comet Dev Log" />
+  <meta property="og:url" content="https://m-comet.ga/" />
+  <meta property="og:image" content="http://m-comet.ga/images/0.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary">
+  <!-- og (end) -->
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicon (end) -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Do+Hyeon|Nanum+Gothic|Nanum+Pen+Script|Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/common.css" />
+  <link rel="stylesheet" type="text/css" href="./index.css" />
 </head>
+
 <body>
-    <!-- Loader -->
-    <div id="loader">
-        <div id="shadow"></div>
-        <div id="box"></div>
+  <!-- Loader -->
+  <div id="loader">
+    <div id="shadow"></div>
+    <div id="box"></div>
+  </div>
+  <!-- Loader (end) -->
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">M-Comet Dev Log</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link disabled" href="./aboutme.html">About Me</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- Loader (end) -->
+  </nav>
+  <!-- Navbar (end) -->
 
-    <!-- Button for move to top -->
-    <div class="btn-top" data-100p-start="opacity: 0;" data-110p-start="opacity: 1;">
-        <a class="scrlink circle" style="text-align: center;"><i class="fas fa-chevron-up btn pt-0"></i></a>
-    </div>
-    <!-- Button for move to top (end) -->
+  <!-- Content -->
+  <main>
+    <header>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" data-100p-start="opacity: 1" data-105p-start="opacity: 0">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html">M-Comet</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="./aboutme.html">About Me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar (end) -->
+    </header>
+    <div id="container"></div>
+  </main>
+  <!-- Content (end) -->
 
-    <!-- Content -->
-    <main>
-        <header>
-            
-        </header>
-        <div class="container">
-            
-            <div class="bgimg-1"></div>
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      // Loader remove
+      $('#loader').remove();
 
-            <div id="row1" class="row">
-                <div class="col-md left-col">
-                    <div class="img">
-                        <img id="img1" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="https://i.imgur.com/3b85WvV.jpg" />
-                    </div>
-                </div>
-                <div class="col-md right-col">
-                    <div class="quote">
-                        <p data-40p-center="opacity: 0; padding-top: 100px; color: rgb(0,0,0);" data-20p-center="opacity: 1; padding-top: 0px; color: rgb(255,255,255);">
-                            “When given the choice between being right or being kind, choose kind.”
-                        </p>
-                        <p data-40p-center="opacity: 0; padding-top: 80px; color: rgb(0,0,0);" data-20p-center="opacity: 1; padding-top: 0px; color: rgb(255,255,255);">
-                            옳음과 친절 중 한 가지만 고를 수 있다면, 친절을 선택하라
-                        </p>
-                        <p data-40p-center="opacity: 0; padding-top: 80px; color: rgb(0,0,0);" data-20p-center="opacity: 1; padding-top: 0px; color: rgb(255,255,255);">
-                            - Dr Wayne W. Dyer
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bgimg-2"></div>
-
-            <div id="row2" class="row">
-                <div class="col-md left-col">
-                    <div class="quote">
-                        <p data-40p-center="opacity: 0; padding-top: 50px; color: rgb(0,0,0);" data-20p-center="opacity: 1; padding-top: 0px; color: rgb(255,255,255);">
-                            “When you were born you were crying and everyone else was smiling. Live your life so at the end, you're the one who is smiling and everyone else is crying."
-                        </p>
-                        <p data-40p-center="opacity: 0; padding-top: 80px; color: rgb(0,0,0);" data-20p-center="opacity: 1; padding-top: 0px; color: rgb(255,255,255);">
-                            네가 태어났을 때, 너는 울었고 세상은 기뻐했단다. 네가 죽을 때에는 세상이 울고 네가 기뻐할 수 있는 삶을 살거라
-                        </p>
-                        <p data-40p-center="opacity: 0; padding-top: 80px; color: rgb(0,0,0);" data-20p-center="opacity: 1; padding-top: 0px; color: rgb(255,255,255);">
-                            - Ralph Waldo Emerson
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md right-col">
-                    <div class="img">
-                        <img id="img2" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="https://i.imgur.com/54uE7Ki.jpg" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="bgimg-3"></div>
-                
-            <div id="row3" class="row">
-                <div class="col-md left-col">
-                    <div class="img">
-                        <img id="img3" class="img-fluid img-thumbnail" data-30p-center="opacity: 0.5; transform: scale(0.95,0.95)" data-10p-center="opacity: 1; transform: scale(1,1)" src="https://i.imgur.com/4Tf93VV.jpg" />
-                    </div>
-                </div>
-                <div class="col-md right-col">
-                    <div class="quote">
-                        <p data-40p-center="opacity: 0; padding-top: 100px; color: rgb(0,0,0);" data-20p-center="opacity: 1; padding-top: 0px; color: rgb(255,255,255);">
-                            "Man is how he eats."
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="bgimg-4">
-                <div class="caption">
-                    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Thank you</span>
-                </div>
-            </div>
-            <!--
-            <div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-500="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);">WOOOT</div>
-            <div data-0="background-color:rgb(0,0,255);transform[bounce]:rotate(0deg);" data-top="background-color:rgb(255,0,0);transform[bounce]:rotate(360deg);">WOOOT</div>
-            -->
-        </div>
-    </main>
-    <!-- Content (end) -->
-
-<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="./js/popper.min.js"></script>
-<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-<script type="text/javascript" src="./js/skrollr.min.js"></script>
-<script type="text/javascript">
-$(document).ready(() => {
-    if($(window).width() <= 754) {
-        // 작은 화면에서 그림과 인용구 위치 조정
-        $( "#row2" ).append( $( "#row2 .left-col" ) );
-        // 작은 화면에서는 scroll animation제거
-        skrollr.init().destroy();
-    } else {
-        $( "#row2" ).append( $( "#row2 .right-col" ) );
-        skrollr.init();
-    }
-
-    // Button for move to top
-    $('a.scrlink').click((event) => {
-        event.preventDefault();
-        $('html, body').animate({scrollTop: 0}, 500);
+      devlog.init(document.getElementById('container'));
     });
-});
-
-$(window).on('load', function() {
-    // Loader remove
-    $('#loader').remove();
-    $('body > .btn-top, body > nav, body > main').css("visibility", "visible");
-});
-</script>
+  </script>
 </body>
+
 </html>

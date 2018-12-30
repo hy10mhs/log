@@ -1,12 +1,17 @@
-body { height: unset !important; }
-body > .btn-top, body > nav, body > main {
-	visibility: hidden
+.profile-img {
+    width: 17.5rem;
 }
-main {
-    margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+    .profile-img {
+        width: 25rem;
+    }
 }
-ul {
+main ul {
     list-style: none;
+    font-size: 1.25rem;
+}
+main ul > li:not(:last-child) {
+    margin-bottom: 0.75rem;
 }
 .card-deck ul li:before {
     content: '✓  ';
